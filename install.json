@@ -22,7 +22,7 @@
     {
       "method": "shell.enter",
       "params": {
-        "message": "conda init cmd.exe",
+        "message": "conda activate bs_auto",
         "on": [
           {
             "event": null,
