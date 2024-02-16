@@ -22,7 +22,7 @@
     {
       "method": "shell.enter",
       "params": {
-        "message": "conda init",
+        "message": "conda init cmd.exe",
         "on": [
           {
             "event": null,
