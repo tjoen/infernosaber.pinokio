@@ -34,7 +34,7 @@
     {
       "method": "shell.enter",
       "params": {
-        "message": "conda activate bs-auto",
+        "message": "conda info --envs",
         "on": [
           {
             "event": null,
