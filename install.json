@@ -22,6 +22,18 @@
     {
       "method": "shell.enter",
       "params": {
+        "message": "conda init",
+        "on": [
+          {
+            "event": null,
+            "return": true
+          }
+        ]
+      }
+    },    
+    {
+      "method": "shell.enter",
+      "params": {
         "message": "conda activate bs-auto",
         "on": [
           {
