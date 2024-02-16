@@ -53,7 +53,7 @@
     {
       "method": "browser.open",
       "params": {
-        "uri": "/?selected=instructir"
+        "uri": "/?selected=infernosaber"
       }
     }
   ]
