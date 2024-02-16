@@ -9,7 +9,7 @@
     {
       "method": "shell.run",
       "params": {
-        "message": "{{os.platform() === 'win32' ? 'python' : 'python3'}} -m venv env",
+        "message": "conda env create -f anaconda_environment.yaml",
         "path": "infernosaber"
       }
     },
@@ -22,7 +22,7 @@
     {
       "method": "shell.enter",
       "params": {
-        "message": "{{os.platform() === 'win32' ? 'env\\\\Scripts\\\\activate env' : 'source env/bin/activate env'}}",
+        "message": "conda activate bs-auto",
         "on": [
           {
             "event": null,
@@ -53,7 +53,7 @@
     {
       "method": "browser.open",
       "params": {
-        "uri": "/?selected=instructir"
+        "uri": "/?selected=infernosaber"
       }
     }
   ]
