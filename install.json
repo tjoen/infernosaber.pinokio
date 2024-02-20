@@ -3,13 +3,13 @@
     {
       "method": "shell.run",
       "params": {
-        "message": "git clone https://github.com/tjoen/infernosaber.git"
+        "message": "git clone git@github.com:fred-brenner/InfernoSaber---BeatSaber-Automapper.git infernosaber"
       }
     },
     {
       "method": "shell.run",
       "params": {
-        "message": "conda env create -f anaconda_environment.yaml",
+        "message": "{{os.platform() === 'win32' ? 'python' : 'python3'}} -m venv env",
         "path": "infernosaber"
       }
     },
@@ -22,7 +22,7 @@
     {
       "method": "shell.enter",
       "params": {
-        "message": "conda activate bs_auto",
+        "message": "{{os.platform() === 'win32' ? 'env\\\\Scripts\\\\activate env' : 'source env/bin/activate env'}}",
         "on": [
           {
             "event": null,
@@ -31,18 +31,6 @@
         ]
       }
     },    
-    {
-      "method": "shell.enter",
-      "params": {
-        "message": "conda info --envs",
-        "on": [
-          {
-            "event": null,
-            "return": true
-          }
-        ]
-      }
-    },
     {
       "method": "shell.enter",
       "params": {
