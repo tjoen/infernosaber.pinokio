@@ -3,7 +3,7 @@
     {
       "method": "shell.run",
       "params": {
-        "message": "git clone git@github.com:fred-brenner/InfernoSaber---BeatSaber-Automapper.git infernosaber"
+        "message": "git clone https://github.com/fred-brenner/InfernoSaber---BeatSaber-Automapper.git infernosaber"
       }
     },
     {
